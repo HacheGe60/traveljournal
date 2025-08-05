@@ -4,15 +4,11 @@ import data from "./data";
 
 export default function App() {
 
-  const entries = data.map(entry => {
+  const entryElements = data.map(entry => {
     return (
       <Entry
-        image={entry.img}
-        title={entry.title}
-        country={entry.country}
-        googleMapsLink={entry.googleMapsLink}
-        dates={entry.dates}
-        text={entry.text}
+        key={entry.id}
+        entry={entry}
       />
     );
   });
@@ -21,7 +17,7 @@ export default function App() {
     <>
       <Header />
       <main className="container">
-        {entries}
+        {entryElements}
       </main>
     </>
   );

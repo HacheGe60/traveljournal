@@ -1,6 +1,7 @@
 html,
 body {
     margin: 0;
+    font-family: inter, serif;
 }
 
 header {
@@ -21,4 +22,92 @@ header>h1 {
     font-size: 0.9rem;
     font-weight: 500;
     font-family: Inter;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 2.5rem;
+}
+
+article .image {
+    position: relative;
+}
+
+article .image>img {
+    width: 8rem;
+    height: 10.6rem;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    border-radius: .3rem;
+}
+
+article .image .credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 0.4rem;
+    color: white;
+    padding-left: .5rem;
+    text-shadow: 0;
+}
+
+article .image .credit a {
+    color: white;
+    text-decoration: none;
+}
+
+article .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+article .text h3 {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #2B283A;
+    margin: 0;
+    gap: 0.5rem;
+    letter-spacing: .1rem;
+}
+
+article .text h3>img {
+    width: 0.7rem;
+    height: 0.7rem;
+}
+
+article .text h3 a {
+    text-decoration: none;
+    color: #918E9B;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: underline;
+}
+
+article .text h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2B283A;
+    margin: 0;
+}
+
+article .text h4 {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #2B283A;
+    margin: 0;
+}
+
+article .text p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #2B283A;
+    margin: 0;
 }
